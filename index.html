@@ -3,34 +3,34 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Dynamic Website</title>
+  <title>My PSU-Themed Website</title>
   <style>
     html, body {
       margin: 0;
       padding: 0;
       height: 100vh;
       width: 100vw;
-      font-family: sans-serif;
+      font-family: 'Serifa', sans-serif;
       background: url('your-background.jpg') no-repeat center center fixed;
       background-size: cover;
       display: flex;
       flex-direction: column;
     }
 
-    header, footer {
+    header {
       height: 25vh;
-      background-color: rgba(0, 0, 0, 0.6);
+      background-color: #1e407c; /* Beaver Blue */
       color: white;
       display: flex;
       align-items: center;
-      justify-content: space-around;
+      justify-content: space-between;
+      padding: 0 2rem;
     }
 
-    main {
-      height: 50vh;
-      background-color: rgba(255, 255, 255, 0.8);
-      overflow: auto;
-      padding: 1rem;
+    nav {
+      display: flex;
+      gap: 1rem;
+      margin-left: auto;
     }
 
     .tab {
@@ -46,6 +46,14 @@
       background-color: rgba(255, 255, 255, 0.4);
     }
 
+    main {
+      height: 50vh;
+      background-color: rgba(65, 182, 230, 0.9); /* Pugh Blue with opacity */
+      overflow: auto;
+      padding: 1rem;
+      color: #001e44; /* Readable on Pugh Blue */
+    }
+
     .tab-content {
       display: none;
     }
@@ -53,28 +61,40 @@
     .tab-content.active {
       display: block;
     }
+
+    footer {
+      height: 25vh;
+      background-color: #001e44; /* Nittany Navy */
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   </style>
 </head>
 <body>
 
   <header>
-    <div class="tab" onclick="showTab('home')">Home</div>
-    <div class="tab" onclick="showTab('about')">About</div>
-    <div class="tab" onclick="showTab('contact')">Contact</div>
+    <div><strong>My PSU Site</strong></div>
+    <nav>
+      <div class="tab" onclick="showTab('home')">Home</div>
+      <div class="tab" onclick="showTab('about')">About</div>
+      <div class="tab" onclick="showTab('contact')">Contact</div>
+    </nav>
   </header>
 
   <main>
     <div id="home" class="tab-content active">
       <h2>Welcome</h2>
-      <p>This is the home tab.</p>
+      <p>This is the home tab. Replace this with your content.</p>
     </div>
     <div id="about" class="tab-content">
       <h2>About Me</h2>
-      <p>Some information here...</p>
+      <p>Some information about you, your work, or your project can go here.</p>
     </div>
     <div id="contact" class="tab-content">
       <h2>Contact</h2>
-      <p>Contact info here...</p>
+      <p>Put your email, links to social media, or contact form here.</p>
     </div>
   </main>
 
