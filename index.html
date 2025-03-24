@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My PSU-Themed Website</title>
+  <title>Andrés Valdez, Ph.D.</title>
   <style>
     html, body {
       margin: 0;
       padding: 0;
       height: 100vh;
       width: 100vw;
-      font-family: 'Serifa', sans-serif;
+      font-family: 'Serif', sans-serif;
       background: url('your-background.jpg') no-repeat center center fixed;
       background-size: cover;
       display: flex;
@@ -18,7 +18,7 @@
     }
 
     header {
-      height: 25vh;
+      height: 20vh;
       background-color: #1e407c; /* Beaver Blue */
       color: white;
       display: flex;
@@ -47,7 +47,7 @@
     }
 
     main {
-      height: 50vh;
+      height: 65vh;
       background-color: rgba(65, 182, 230, 0.9); /* Pugh Blue with opacity */
       overflow: auto;
       padding: 1rem;
@@ -63,7 +63,7 @@
     }
 
     footer {
-      height: 25vh;
+      height: 15vh;
       background-color: #001e44; /* Nittany Navy */
       color: white;
       display: flex;
@@ -75,11 +75,11 @@
 <body>
 
   <header>
-    <div><strong>My PSU Site</strong></div>
+    <div><strong>Andrés Valdez, Ph.D. </strong></div>
     <nav>
       <div class="tab" onclick="showTab('home')">Home</div>
       <div class="tab" onclick="showTab('about')">About</div>
-      <div class="tab" onclick="showTab('contact')">Contact</div>
+<!--      <div class="tab" onclick="showTab('contact')">Contact</div>-->
     </nav>
   </header>
 
@@ -98,9 +98,22 @@
     </div>
   </main>
 
-  <footer>
-    <p>© 2025 Your Name. All rights reserved.</p>
-  </footer>
+<footer>
+  <div style="text-align: center;">
+    <p style="margin-bottom: 0.5rem;">
+      <strong>© 2025 Andrés Valdez, Ph.D.</strong> — Assistant Research Professor of Biomedical Engineering at the Pennsylvania State University.
+    </p>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; font-size: 0.9rem;">
+      <a href="mailto:arvaldez@psu.edu" style="color: white; text-decoration: none;">Email</a>
+      <span>|</span>
+      <a href="https://github.com/ar-valdez" target="_blank" style="color: white; text-decoration: none;">GitHub</a>
+      <span>|</span>
+      <a href="https://orcid.org/0000-0003-3094-3993" target="_blank" style="color: white; text-decoration: none;">ORCID</a>
+      <span>|</span>
+      <a href="https://www.linkedin.com/in/phd-arvaldez/" target="_blank" style="color: white; text-decoration: none;">LinkedIN</a>
+    </div>
+  </div>
+</footer>
 
   <script>
     function showTab(tabId) {
